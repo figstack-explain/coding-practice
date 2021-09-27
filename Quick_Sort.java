@@ -3,7 +3,6 @@ class Quick_Sort {
     
   public static int[] QuickSort(int[] arr, int elements) {
       if(elements < 2){ return arr; }
-
       int current_position=0;
       int temp;
 
@@ -15,7 +14,6 @@ class Quick_Sort {
               arr[current_position] = temp;
           }
       }
-
       temp = arr[0]; 
       arr[0] = arr[current_position]; 
       arr[current_position] = temp; 
@@ -31,9 +29,7 @@ class Quick_Sort {
       for(int i=current_position+1; i<elements; i++){
           final_array[i] = right[i-current_position-1];
       }
-
     return final_array;
-
   }
 
     public static void main( String args[] ) {
